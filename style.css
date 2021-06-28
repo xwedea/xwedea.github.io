@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Source Code Pro', monospace;
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+header{
+    background-color: rgb(0, 0, 0);
+    color: rgb(228, 228, 228);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header > .top-segment{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+}
+header > .top-segment > div > a > i{
+    color: rgb(255, 145, 106);
+    transition: transform 0.5s ease;
+}
+header > .top-segment > div > a > i:hover{
+    transform: translateY(-10px);
+}
+header > .middle-segment{
+    text-align: center;
+}
+header > .middle-segment > h1{
+    font-size: 8rem;
+    font-family: 'Source Code Pro', monospace;
+}
+header > .middle-segment > h2{
+    margin-top: 20px;
+    font-size: 2rem;
+}
+header > .bottom-segment > img{
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    transition: transform 0.5s;
+}
+header > .bottom-segment > img:hover{
+    transform: translateY(20px);
+    cursor: pointer;
+}
+
+/* SECTION: CONTAINER */
+#container{
+    background-color: rgb(242, 242, 242);
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+.go-up{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -22px;
+    color: rgb(255, 145, 106);
+    transition: transform 0.5s;
+    cursor: pointer;
+    z-index: 1;
+}
+.go-up:hover{
+    transform: translateY(-20px);
+}
+.horizontal-navigate{
+    display: inline-flex;
+    position: absolute;
+    bottom: 50px;
+    color: black;
+    z-index: 1;
+    cursor: pointer;
+    left: 50%;
+    margin-left: -105px;
+    transition: transform 0.8s;
+}
+.horizontal-navigate .about-me, .portfolio{
+    transition: transform 0.5s;
+}
+.horizontal-navigate .about-me:hover, .portfolio:hover{
+    transform: translateY(-5px);
+}
+.horizontal-navigate .about-me{
+    margin-right: 50px;
+}
+
+/* SECTION: PERSONAL-INFO */
+#personal-info{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    transition: transform 0.8s;
+    padding-top: 25vh;
+}
+#personal-info h1{
+    margin-bottom: 10vh;
+}
+#personal-info img{
+    width: 200px;
+    margin-bottom: 10vh;
+}
+/* #personal-info p{
+} */
+
+/* SECTION: PORTFOLIO */
+#portfolio{
+    position: absolute;
+    transform: translateX(100%);
+    width: 100vw;
+    height: 100vh;
+    left: 100%;
+    transition: transform 0.8s;
+    text-align: center;
+    padding-top: 25vh;
+}
+#portfolio h1{
+    margin-bottom: 10vh;
+}
+
+/* @keyframes slideAnimation{
+    from{
+        
+    }
+} */
